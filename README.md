@@ -1,2 +1,5 @@
-# Adversarial-NMT-
-Adversarial Neural Machine Translation on Urdu and English Parallel Corpora
+# Adversarial-NMT
+Adversarial Neural Machine Translation on Urdu and English Parallel Corpora  
+Dataset: https://www.kaggle.com/datasets/zainuddin123/parallel-corpus-for-english-urdu-language
+### Architecture
+The implemented architecture is a neural machine translation (NMT) model employing an encoder-decoder framework with attention mechanism for translating English sentences to Urdu. The encoder, composed of an embedding layer followed by a Long Short-Term Memory (LSTM) layer, processes the input English sequences, capturing their semantic representation. The decoder, similarly structured, utilizes an embedding layer and an LSTM layer to generate Urdu translations, attending to relevant parts of the input sequence during each translation step. The model is trained using a combination of teacher forcing and adversarial training, where a discriminator evaluates the quality of generated translations, enhancing the model's ability to produce linguistically accurate Urdu translations of English sentences. Additionally, an inference function is implemented to facilitate real-time translation, allowing users to input English sentences and receive their corresponding Urdu translations.
